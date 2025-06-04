@@ -52,5 +52,21 @@ public class User {
 	  public String getGoogleLink() {
 		    return this.googleLink;
 	  }
+	  
+	  public void setName(String name) {
+		    this.name = name;
+	  }
+	  
+	  public void setLatitude(Double latitude) {
+		    this.latitude = latitude;
+	  }
+	  
+	  public void setLongitude(Double longitude) {
+		    this.longitude = longitude;
+	  }
+	  
+	  public void setGoogleLink(String googleLink) {
+		    this.googleLink = googleLink;
+	  }
 
 }
