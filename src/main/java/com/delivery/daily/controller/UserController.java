@@ -58,8 +58,8 @@ public class UserController {
 	@PutMapping("/users/{id}")
     public ResponseEntity<UserDTO> updateUser(@PathVariable Integer id, @RequestBody UserDTO userDTO) {
         try {
-            UserDTO updatedProduct = this.userService.updateUser(id, userDTO);
-            return ResponseEntity.ok(updatedProduct);
+            UserDTO updatedUser = this.userService.updateUser(id, userDTO);
+            return ResponseEntity.ok(updatedUser);
         } catch (Exception e) {
             return ResponseEntity.notFound().build();
         }
